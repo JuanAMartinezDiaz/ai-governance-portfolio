@@ -1,0 +1,16 @@
+{
+  "evidence_type": "invented_aggregate_fixture_not_credit_model_output",
+  "source_document": "project-04-incident-response/incident-scenario.md",
+  "reference_cluster": {
+    "id": "Q",
+    "applications": 300,
+    "approved": 150
+  },
+  "compared_cluster": {
+    "id": "P",
+    "applications": 200,
+    "approved": 60
+  },
+  "internal_alert_ratio": 0.8
+}
+

@@ -1,0 +1,73 @@
+{
+  "case_id": "BC-003",
+  "prepared": "2026-11-12",
+  "evidence_status": "assumed_scenario_inputs_not_observed_performance",
+  "currency": "USD",
+  "scenario_period": "first_12_operating_months_after_hypothetical_approval",
+  "real_execution_authorized": false,
+  "monthly_applications": 1000,
+  "months": 12,
+  "loaded_internal_hourly_cost_usd": 60,
+  "reviewers_in_parallel": 2,
+  "hours_per_business_day": 8,
+  "workdays_per_month": 20,
+  "queue_wait_business_hours": 16,
+  "options": [
+    {
+      "id": "manual",
+      "name": "Structured manual review",
+      "decision_status": "Retain fictional existing process",
+      "direct_review_minutes_per_application": 12,
+      "correctable_rework_rate": 0.04,
+      "minutes_per_rework_event": 8,
+      "exception_rate": 0.06,
+      "minutes_per_exception": 12,
+      "monthly_governance_hours": 4,
+      "batch_compute_business_hours": 0,
+      "monthly_platform_cost_usd": 0,
+      "setup_internal_hours": 0,
+      "setup_vendor_cost_usd": 0,
+      "independent_assurance_cost_usd": 0
+    },
+    {
+      "id": "reviewer_first_ranking",
+      "name": "CandidateRank with reviewer-first challenge",
+      "decision_status": "HOLD for live use; synthetic evaluation only",
+      "direct_review_minutes_per_application": 14,
+      "correctable_rework_rate": 0.04,
+      "minutes_per_rework_event": 8,
+      "exception_rate": 0.08,
+      "minutes_per_exception": 15,
+      "monthly_governance_hours": 12,
+      "batch_compute_business_hours": 2,
+      "monthly_platform_cost_usd": 500,
+      "setup_internal_hours": 80,
+      "setup_vendor_cost_usd": 6000,
+      "independent_assurance_cost_usd": 9000
+    },
+    {
+      "id": "extraction_only",
+      "name": "CandidateExtract without ranking",
+      "decision_status": "ASSESS; separate scope, controls and approval required",
+      "direct_review_minutes_per_application": 9,
+      "correctable_rework_rate": 0.04,
+      "minutes_per_rework_event": 10,
+      "exception_rate": 0.08,
+      "minutes_per_exception": 12,
+      "monthly_governance_hours": 8,
+      "batch_compute_business_hours": 1,
+      "monthly_platform_cost_usd": 300,
+      "setup_internal_hours": 60,
+      "setup_vendor_cost_usd": 3000,
+      "independent_assurance_cost_usd": 6000
+    }
+  ],
+  "sensitivity": [
+    {"field": "monthly_applications", "scope": "global", "values": [500, 1000, 2000]},
+    {"field": "loaded_internal_hourly_cost_usd", "scope": "global", "values": [40, 60, 90]},
+    {"field": "direct_review_minutes_per_application", "scope": "extraction_only", "values": [8, 9, 12]},
+    {"field": "correctable_rework_rate", "scope": "extraction_only", "values": [0.02, 0.04, 0.08]},
+    {"field": "exception_rate", "scope": "extraction_only", "values": [0.04, 0.08, 0.15]},
+    {"field": "independent_assurance_cost_usd", "scope": "extraction_only", "values": [3000, 6000, 18000]}
+  ]
+}

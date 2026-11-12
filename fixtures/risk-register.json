@@ -1,0 +1,63 @@
+{
+  "evidence_type": "synthetic_ordinal_scores_not_observed_probabilities",
+  "source_document": "project-02-risk-assessment/risk-assessment.md",
+  "risks": [
+    {
+      "risk_id": "R1",
+      "likelihood": 4,
+      "impact": 5,
+      "control_id": "C1",
+      "current_control_evidence": "not_operationally_tested"
+    },
+    {
+      "risk_id": "R2",
+      "likelihood": 4,
+      "impact": 4,
+      "control_id": "C2",
+      "current_control_evidence": "not_operationally_tested"
+    },
+    {
+      "risk_id": "R3",
+      "likelihood": 3,
+      "impact": 4,
+      "control_id": "C3",
+      "current_control_evidence": "not_operationally_tested"
+    },
+    {
+      "risk_id": "R4",
+      "likelihood": 3,
+      "impact": 4,
+      "control_id": "C4",
+      "current_control_evidence": "not_operationally_tested"
+    },
+    {
+      "risk_id": "R5",
+      "likelihood": 3,
+      "impact": 4,
+      "control_id": "C5",
+      "current_control_evidence": "not_operationally_tested"
+    },
+    {
+      "risk_id": "R6",
+      "likelihood": 3,
+      "impact": 4,
+      "control_id": "C6",
+      "current_control_evidence": "not_operationally_tested"
+    },
+    {
+      "risk_id": "R7",
+      "likelihood": 3,
+      "impact": 4,
+      "control_id": "C7",
+      "current_control_evidence": "not_operationally_tested"
+    },
+    {
+      "risk_id": "R8",
+      "likelihood": 3,
+      "impact": 3,
+      "control_id": "C8",
+      "current_control_evidence": "not_operationally_tested"
+    }
+  ]
+}
+

@@ -1,0 +1,195 @@
+{
+  "classifications": [
+    {
+      "decision": "HIGH_RISK",
+      "reason": "Stated purpose matches a modeled high-risk category.",
+      "required_evidence": [
+        "Use-specific risk assessment, control evidence, and accountable release decision"
+      ],
+      "rule_id": "CATEGORY-001",
+      "source": "project-01-ai-system-inventory/inventory.json",
+      "system_id": "HB-001"
+    },
+    {
+      "decision": "NO_HIGH_RISK_CATEGORY_IDENTIFIED",
+      "reason": "Stated use is fraud detection only, with credit-decision reuse excluded.",
+      "required_evidence": [
+        "Confirm purpose boundary and assess security, privacy, and operational risks"
+      ],
+      "rule_id": "FRAUD-001",
+      "source": "project-01-ai-system-inventory/inventory.json",
+      "system_id": "HB-002"
+    },
+    {
+      "decision": "HIGH_RISK",
+      "reason": "Stated purpose matches a modeled high-risk category.",
+      "required_evidence": [
+        "Use-specific risk assessment, control evidence, and accountable release decision"
+      ],
+      "rule_id": "CATEGORY-001",
+      "source": "project-01-ai-system-inventory/inventory.json",
+      "system_id": "HB-003"
+    },
+    {
+      "decision": "NO_HIGH_RISK_CATEGORY_IDENTIFIED",
+      "reason": "No high-risk category is identified within the stated bounded exercise use.",
+      "required_evidence": [
+        "Maintain stated authority boundaries and assess other applicable controls"
+      ],
+      "rule_id": "BOUNDARY-001",
+      "source": "project-01-ai-system-inventory/inventory.json",
+      "system_id": "HB-004"
+    },
+    {
+      "decision": "NO_HIGH_RISK_CATEGORY_IDENTIFIED",
+      "reason": "No high-risk category is identified within the stated bounded exercise use.",
+      "required_evidence": [
+        "Maintain stated authority boundaries and assess other applicable controls"
+      ],
+      "rule_id": "BOUNDARY-001",
+      "source": "project-01-ai-system-inventory/inventory.json",
+      "system_id": "HB-005"
+    },
+    {
+      "decision": "HIGH_RISK",
+      "reason": "Stated purpose matches a modeled high-risk category.",
+      "required_evidence": [
+        "Use-specific risk assessment, control evidence, and accountable release decision"
+      ],
+      "rule_id": "CATEGORY-001",
+      "source": "project-01-ai-system-inventory/inventory.json",
+      "system_id": "HB-006"
+    },
+    {
+      "decision": "PROHIBITED_ON_STATED_FACTS",
+      "reason": "Stated workplace biometric emotion use has no medical or safety exception.",
+      "required_evidence": [
+        "Stop proposed use; legal review of the stated facts"
+      ],
+      "rule_id": "EMOTION-001",
+      "source": "project-01-ai-system-inventory/inventory.json",
+      "system_id": "HB-007"
+    },
+    {
+      "decision": "NO_HIGH_RISK_CATEGORY_IDENTIFIED",
+      "reason": "No high-risk category is identified within the stated bounded exercise use.",
+      "required_evidence": [
+        "Maintain stated authority boundaries and assess other applicable controls"
+      ],
+      "rule_id": "BOUNDARY-001",
+      "source": "project-01-ai-system-inventory/inventory.json",
+      "system_id": "HB-008"
+    },
+    {
+      "decision": "REVIEW_REQUIRED",
+      "reason": "The narrow exercise does not resolve this purpose.",
+      "required_evidence": [
+        "Additional facts and specialist classification review"
+      ],
+      "rule_id": "UNKNOWN-001",
+      "source": "project-01-ai-system-inventory/inventory.json",
+      "system_id": "HB-009"
+    },
+    {
+      "decision": "REVIEW_REQUIRED",
+      "reason": "The narrow exercise does not resolve this purpose.",
+      "required_evidence": [
+        "Additional facts and specialist classification review"
+      ],
+      "rule_id": "UNKNOWN-001",
+      "source": "project-01-ai-system-inventory/inventory.json",
+      "system_id": "HB-010"
+    }
+  ],
+  "evidence_scope": "bounded_synthetic_rules_with_explicit_inputs_and_reasons",
+  "input_sha256": {
+    "fixtures/incident-evaluation.json": "c080e38799b50261453f8464d4cc11989ff5054f1c189466702481c0300d5b30",
+    "fixtures/risk-register.json": "a51a1b9ca8cc5e52236a340adf21d9c2fdae2ee7a6f505dbf813c5a2c08a71dd",
+    "project-01-ai-system-inventory/inventory.json": "4b5649320387d7db6dc6c566c19cba0a0f7718a6679d6b5638b29c4bd3fc1dbb",
+    "project-02-risk-assessment/risk-assessment.md": "26cb48ae012d83dcb89a88c1e20cbbc59b6ac3f00dbe33cb9a560428d09dc915",
+    "project-02-risk-assessment/synthetic-evaluation.json": "af3d0af74b9299742e0322fe614a07ddb95f5df4bb0dcf193c31e3d23baeddf5",
+    "project-04-incident-response/incident-scenario.md": "71fc4a51c857d68262de38148e0c7751cf40cb2006da5bb0eb5b49b2bcb71584",
+    "tools/evaluate.py": "9ea57dcbca1df135a8eda8b41570187ff6b4a1c7f212fda4acafea859afea96d",
+    "tools/governance.py": "c5d8f82398f5fdc30623b3310af8e7bf3c426302a137a3904dee589a000607e9"
+  },
+  "limits": [
+    "Presence and hashes do not establish truth, signatures, or immutable evidence.",
+    "The classifier implements only explicitly modeled exercise categories.",
+    "No legal clearance or operational control assurance follows from these checks."
+  ],
+  "risk_input_trace": [
+    {
+      "calculated_band": "critical",
+      "calculated_score": 20,
+      "control_id": "C1",
+      "current_control_evidence": "not_operationally_tested",
+      "impact": 5,
+      "likelihood": 4,
+      "risk_id": "R1"
+    },
+    {
+      "calculated_band": "high",
+      "calculated_score": 16,
+      "control_id": "C2",
+      "current_control_evidence": "not_operationally_tested",
+      "impact": 4,
+      "likelihood": 4,
+      "risk_id": "R2"
+    },
+    {
+      "calculated_band": "high",
+      "calculated_score": 12,
+      "control_id": "C3",
+      "current_control_evidence": "not_operationally_tested",
+      "impact": 4,
+      "likelihood": 3,
+      "risk_id": "R3"
+    },
+    {
+      "calculated_band": "high",
+      "calculated_score": 12,
+      "control_id": "C4",
+      "current_control_evidence": "not_operationally_tested",
+      "impact": 4,
+      "likelihood": 3,
+      "risk_id": "R4"
+    },
+    {
+      "calculated_band": "high",
+      "calculated_score": 12,
+      "control_id": "C5",
+      "current_control_evidence": "not_operationally_tested",
+      "impact": 4,
+      "likelihood": 3,
+      "risk_id": "R5"
+    },
+    {
+      "calculated_band": "high",
+      "calculated_score": 12,
+      "control_id": "C6",
+      "current_control_evidence": "not_operationally_tested",
+      "impact": 4,
+      "likelihood": 3,
+      "risk_id": "R6"
+    },
+    {
+      "calculated_band": "high",
+      "calculated_score": 12,
+      "control_id": "C7",
+      "current_control_evidence": "not_operationally_tested",
+      "impact": 4,
+      "likelihood": 3,
+      "risk_id": "R7"
+    },
+    {
+      "calculated_band": "moderate",
+      "calculated_score": 9,
+      "control_id": "C8",
+      "current_control_evidence": "not_operationally_tested",
+      "impact": 3,
+      "likelihood": 3,
+      "risk_id": "R8"
+    }
+  ],
+  "rule_revision": "bounded-triage-v1"
+}
